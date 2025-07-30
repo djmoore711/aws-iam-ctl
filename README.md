@@ -9,7 +9,7 @@ A cross-platform CLI tool for managing AWS IAM credentials directly from the ter
 - `iamctl password reset` - Change IAM user password
 - `iamctl mfa enable` - Enable virtual MFA (TOTP)
 - `iamctl mfa disable` - Disable MFA
-- `iamctl status` - Show current IAM user, key age, MFA status
+- `iamctl status` - Show current IAM user, key age, MFA status (with optional CSV output)
 
 ## Installation
 
@@ -21,8 +21,11 @@ Download the appropriate binary for your platform from the releases page.
 # Configure AWS credentials
 iamctl configure
 
-# Check current status
+# Check current status (text output)
 iamctl status
+
+# Check current status (CSV output)
+iamctl status -o csv
 
 # Rotate access keys
 iamctl keys rotate
