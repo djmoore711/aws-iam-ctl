@@ -19,4 +19,8 @@ go.work
 *.swo
 
 # macOS
-.DS_Store.env
+.DS_Store
+
+# Environment variables
+.env
+.env.local
